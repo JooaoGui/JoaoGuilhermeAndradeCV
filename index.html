@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre Mim</title>
+<style>
+/* Estilos para o menu */
+.menu {
+  position: fixed; /* Menu fixo no topo */
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  z-index: 1000; /* Para garantir que o menu esteja na frente de outros elementos */
+  font-family: 'Roboto', sans-serif; /* Fonte do texto do menu */
+}
+
+.menu ul {
+  list-style-type: none; /* Remove marcadores de lista */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Alinha os itens do menu no centro */
+}
+
+.menu ul li {
+  display: inline-block; /* Exibe os itens do menu em linha */
+  margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.menu ul li a {
+  color: #fff; /* Cor do texto do link */
+  text-decoration: none; /* Remove sublinhado dos links */
+  padding: 5px 10px; /* Espaçamento interno do link */
+}
+
+/* Estilos para a seção de conteúdo */
+.content {
+  padding-top: 60px; /* Ajusta o espaço para o menu fixo */
+  font-family: 'Roboto', sans-serif; /* Fonte do texto do conteúdo */
+}
+
+/* Aumentar tamanho das letras */
+h2 {
+  font-size: 24px; /* Tamanho do cabeçalho */
+}
+
+p, li {
+  font-size: 18px; /* Tamanho do texto */
+}
+
+/* Estilos para o formulário */
+.formulario {
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.formulario label {
+  display: block; /* Exibe os labels em blocos para melhor espaçamento */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+.formulario textarea {
+  height: 150px; /* Altura do campo de texto */
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Importa a fonte Roboto -->
+</head>
+<body>
+<div class="menu">
+  <ul>
+    <li><a href="#sobre">Sobre Mim</a></li> <!-- Link para a seção "Sobre Mim" -->
+    <li><a href="#formacao">Formação</a></li> <!-- Link para a seção "Formação" -->
+    <li><a href="#contato">Contato</a></li> <!-- Link para a seção "Contato" -->
+    <li><a href="https://www.linkedin.com/in/jo%C3%A3o-guilhermee1/">Linkedin</a></li> <!-- Link para o Linkedin -->
+  </ul>
+</div>
+
+<div class="content">
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Tenho 21 anos e desde que me conheço por gente, sou fascinado pelo mundo da programação. O desafio de criar soluções e explorar novas possibilidades sempre me atraiu, e é essa paixão que me impulsiona a buscar constantemente conhecimento nesse campo.</p>
+    <p>Nos meus momentos de lazer, gosto de me envolver com jogos, e mais do que apenas apreciá-los, tenho interesse em compreender as linguagens de programação que os tornam possíveis. Essa curiosidade me levou a explorar diferentes tecnologias e linguagens, sempre buscando entender as engrenagens por trás desse universo.</p>
+    <p>Sou uma pessoa autodidata e madura, características que me permitiram desenvolver habilidades de forma independente e enfrentar desafios com determinação. Além disso, possuo uma boa didática e habilidade para resolver problemas, o que me permite comunicar ideias de forma clara e encontrar soluções eficazes.</p>
+    <p>Estou animado para continuar aprendendo e crescer profissionalmente no campo da programação, contribuindo com minha paixão, criatividade e habilidades para projetos desafiadores e inspiradores.</p>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação</h2>
+    <ul>
+      <li>Ensino Médio Técnico - Instituto Federal do Maranhão (2018-2020)</li>
+      <li>Análise e Desenvolvimento de Sistemas - UNINTER (2023-2026)</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="formulario">
+      <form action="enviar_contato.php" method="POST"> <!-- Campo com ".php" apenas de exemplo demonstrativo-->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para o nome -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required> <!-- Campo de entrada para o email -->
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea> <!-- Campo de entrada para a mensagem -->
+
+        <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+      </form>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
